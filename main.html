@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Cíclico Configurable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="config-view">
+        <h1>Establece el Límite del Contador</h1>
+        <p>Introduce el número máximo al que quieres que llegue el contador (mín. 1, máx. 15):</p>
+        <input type="number" id="ciclos-input" min="1" max="15" value="10">
+        <button id="iniciar-btn">Iniciar Contador</button>
+        <p class="nota">Al iniciar, haz clic en cualquier parte de la pantalla para avanzar.</p>
+    </div>
+
+    <div id="contador-view" style="display: none;">
+        <button id="reiniciar-btn">⬅️ Reiniciar Límite</button>
+        
+        <span id="numero">1</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
